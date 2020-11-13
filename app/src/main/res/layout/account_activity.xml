@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/civMe"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/me" />
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:text="SONI SUCIADI"
+        android:textSize="30dp"
+        android:layout_below="@id/civMe"/>
+
+    <TextView
+        android:id="@+id/tvNpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="1822240086"
+        android:textSize="25dp"
+        android:layout_below="@id/tvnama"/>
+
+    <ImageView
+        android:id="@+id/ivHobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvNpm"
+        android:src="@drawable/ic_baseline_airline_seat_individual_suite_24" />
+
+    <TextView
+        android:id="@+id/tvHobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Hobby"
+        android:layout_below="@id/tvNpm"
+        android:layout_toRightOf="@id/ivHobi"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvValueHobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="Tidur, Makan"
+        android:textSize="25dp"
+        android:layout_below="@id/tvNpm"
+        android:layout_toRightOf="@id/ivHobi"/>
+
+    <ImageView
+        android:id="@+id/ivIG"
+        android:layout_width="95dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/iglogo"
+        android:layout_marginStart="52dp"
+        android:layout_below="@id/ivHobi"/>
+
+    <TextView
+        android:id="@+id/tvIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="40dp"
+        android:text="Instagram"
+        android:textSize="30dp"
+        android:layout_below="@id/tvValueHobi"/>
+
+    <TextView
+        android:id="@+id/tvValueIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+
+        android:text="Soni.suciadi"
+        android:textSize="25dp"
+        android:layout_below="@id/tvIG"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvValueIG"
+        />
+</RelativeLayout>
